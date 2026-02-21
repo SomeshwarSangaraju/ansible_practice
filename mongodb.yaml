@@ -13,9 +13,10 @@
       state: present
 
   - name: Starting and enabling mongodb
-    ansiblie.builtin.service:
+    ansible.builtin.service:
       state: started
       enabled: true
+
   - name: Allow remote Mongodb connections
     ansible.builtin.lineinfile:
       path: /etc/mongod.conf
