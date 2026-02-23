@@ -57,7 +57,7 @@
       dest: /etc/systemd/system/cart.service
     
   - name: Starting and enabling service
-    ansible.builtin.service:
+    ansible.builtin.systemd_service:
       name: cart
       state: started
       enabled: yes
