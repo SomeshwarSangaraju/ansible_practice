@@ -1,0 +1,8 @@
+- name: testing
+  hosts: checking
+  become: yes
+  tasks:
+  - name: install ansible
+    ansible.builtin.package: 
+      name: ansible
+      state: present
