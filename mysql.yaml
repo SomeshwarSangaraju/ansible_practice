@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: Install mongodb
-    community.mysql.mysql_db:
-      name: mysql
+    ansible.builtin.package:
+      name: mysql-server
       state: present
 
   - name: Start and enable
