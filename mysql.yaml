@@ -2,7 +2,7 @@
   hosts: mysql
   become: yes
   tasks:
-  - name: Install mongodb
+  - name: Install mysql
     ansible.builtin.package:
       name: mysql-server
       state: present
