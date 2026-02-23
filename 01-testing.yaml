@@ -8,7 +8,7 @@
       state: present
 
   - name: Clone GitHub repository
-    git:
+    ansible.builtin.git:
       repo: "https://github.com/SomeshwarSangaraju/ansible_practice.git"
       dest: /home/ec2-user
       version: main
