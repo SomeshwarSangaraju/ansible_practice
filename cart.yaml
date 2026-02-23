@@ -61,5 +61,5 @@
       name: cart
       state: started
       enabled: yes
-      demon_reload: true
+      daemon_reload: true
   
