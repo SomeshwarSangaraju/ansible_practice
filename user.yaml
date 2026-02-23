@@ -23,12 +23,12 @@
 
   - name: Delete directory
     ansible.builtin.file:
-      home: /app
+      path: /app
       state: absent
 
   - name: Create directory
     ansible.builtin.file:
-      home: /app
+      path: /app
       state: present
 
   - name: Delete default code
