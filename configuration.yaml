@@ -6,10 +6,15 @@
     ansible.builtin.package: 
       name: ansible
       state: present
-      
+
+  - name: Install git
+    ansible.builtin.package:
+        name: git
+        state: present
+
   - name: Clone GitHub repository
     ansible.builtin.git:
       repo: "https://github.com/SomeshwarSangaraju/ansible_practice.git"
       dest: /home/ec2-user/ansible_practice
       version: main
-      update: yes
+      force: yes
