@@ -2,7 +2,7 @@
   hosts: checking
   become: yes
   tasks:
-  - name: install ansible
+  - name: Install ansible
     ansible.builtin.package: 
       name: ansible
-      state: absent
+      state: present
