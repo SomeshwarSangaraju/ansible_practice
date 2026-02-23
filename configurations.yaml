@@ -12,4 +12,4 @@
       repo: "https://github.com/SomeshwarSangaraju/ansible_practice.git"
       dest: /home/ec2-user/ansible_practice
       version: main
-      force: yes
+      update: yes
