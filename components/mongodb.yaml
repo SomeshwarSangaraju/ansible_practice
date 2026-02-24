@@ -18,11 +18,6 @@
       state: started
       enabled: true
 
-  # - name: Allow remote Mongodb connections
-  #   ansible.builtin.lineinfile:
-  #     path: /etc/mongod.conf
-  #     regexp: 127.0.0.1
-  #     line: 0.0.0.0
   - name: allow remote connection
     ansible.builtin.replace:
       path: /etc/mongod.conf

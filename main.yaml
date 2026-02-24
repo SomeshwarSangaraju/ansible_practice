@@ -1,0 +1,6 @@
+- name: "Setup {{ component }} playbook"
+  hosts: "{{ component }}"
+  become: yes
+  roles:
+  - "{{ component }}"
+  
