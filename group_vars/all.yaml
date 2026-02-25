@@ -1,0 +1,9 @@
+MONGODB_HOST: mongodb.someshwar.fun
+REDIS_HOST: redis.someshwar.fun
+MYSQL_HOST: mysql.someshwar.fun
+RABBITMQ_HOST: rabbitmq.someshwar.fun
+CATALOGUE_HOST: catalogue.someshwar.fun
+USER_HOST: user.someshwar.fun
+CART_HOST: cart.someshwar.fun
+SHIPPING_HOST: shipping.someshwar.fun
+PAYMENT_HOST: payment.someshwar.fun

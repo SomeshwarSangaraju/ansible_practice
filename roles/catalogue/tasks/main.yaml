@@ -49,8 +49,9 @@
 
 - name: Adding catalogue service
   ansible.builtin.copy:
-    src: catalogue.service
-    dest: /etc/systemd/system/catalogue.service
+    src: catalogue.service.j2
+    dest: /etc/systemd/system/catalogue.service.j2
+  notify: daemon reload
 
 - name: copy mongodb repo file
   ansible.builtin.copy:
